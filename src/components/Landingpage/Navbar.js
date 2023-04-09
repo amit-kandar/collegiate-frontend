@@ -120,7 +120,6 @@ export default function Navbar() {
                             <li className="nav-links" id="about"><Link to="/about">About</Link></li>
                             <li className="nav-links" id="team"><Link to="/team">Team</Link></li>
                             <li className="nav-links" id="contact"><Link to="/contact">Contact</Link></li>
-                            <li className="nav-links" id="contact"><Link to="/contact">Contact2</Link></li>
                         </ul>
                     </div>
                     <div className="right-side">
