@@ -1,0 +1,127 @@
+.submit-container {
+    width: 100%;
+    padding: 30% 0 20%;
+    background: #3c5077;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-box{
+    position: absolute;
+    width: 34rem;
+    height: 34rem;
+    border-radius: 7px;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-symbol{
+    position: relative;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-color: rgb(13, 159, 25);
+    top: -40px;
+    display: flex;
+    align-items: center;
+}
+
+.line-1{
+    width: 2.3rem;
+    height: 6px;
+    background-color: #fff;
+    transform: rotate(39deg) translate(17px, -4px);
+}
+
+.line-2{
+    width: 4rem;
+    height: 6px;
+    background-color: #fff;
+    transform: rotate(-51deg) translate(1px, 2px);
+}
+
+.submit-title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.submit-title h3{
+    font-size: 4rem;
+}
+
+.submit-title p{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.ok-button{
+    margin-top: 5rem;
+    font-size: 2rem;
+    background: #3056d3;
+    border: none;
+    padding: 1.5rem 9rem;
+    border-radius: 7px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/*lg screen*/
+@media only screen and (min-device-width: 1008px) and (max-device-width: 1460px) {
+
+}
+
+/*Medium screen*/
+@media only screen and (min-device-width: 641px) and (max-device-width: 1007px) {
+    .submit-container{
+        padding: 50% 0 40%;
+    }
+
+    .right-symbol{
+        top: -27px;
+    }
+
+    .line-1, .line-2{
+        height: 6px;
+    }
+
+    .line-1{
+        transform: rotate(39deg) translate(16px, -5px);
+    }
+    
+    .line-2{
+        transform: rotate(-51deg) translate(3px, 2px);
+    }
+}
+
+/*small screen*/
+@media only screen and (max-device-width: 640px) {
+    .submit-container{
+        padding: 100% 0 50%;
+    }
+
+    .right-symbol{
+        top: -27px;
+    }
+
+    .line-1, .line-2{
+        height: 4px;
+    }
+
+    .line-1{
+        transform: rotate(39deg) translate(12px, -4px);
+    }
+    
+    .line-2{
+        transform: rotate(-51deg) translate(3px, 2px);
+    }
+}

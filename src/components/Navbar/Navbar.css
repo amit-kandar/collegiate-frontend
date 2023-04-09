@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --var-primary: #3056d3;
+  --var-white: #fff;
+  --var-dark-blue: #090e34;
+  --var-gray: #637381;
+  --var-Light-gray: #e5e7eb;
+  --var-gray-bg: #f3f4fe;
+  --var-ring-offset-shadow: 0 0 #0000;
+  --var-ring-shadow: 0 0 #0000;
+  --var-p: 1.9rem;
+  --var-h1: 4.5rem;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden;
+}
+
+.body {
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 2rem 4%;
+  z-index: 100;
+  background-color: var(--var-primary);
+}
+
+.logo a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 4.5rem;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left-side {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-side ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.left-side ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 4rem;
+}
+
+.left-side ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: var(--var-white);
+
+}
+
+.nav-links a:hover {
+  color: var(--var-Light-gray);
+}
+
+.nav-links-a a {
+  color: var(--var-dark-blue) !important;
+  font-size: 1.8rem !important;
+}
+
+.nav-links-a a:hover {
+  color: var(--var-primary) !important;
+}
+
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .nav-user-icon {
+  margin-left: 30px;
+} */
+
+.nav-user-icon img {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.online {
+  position: relative;
+}
+
+.online::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #41db51;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
